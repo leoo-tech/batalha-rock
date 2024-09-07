@@ -1,0 +1,137 @@
+/* Importa a fonte Montserrat do Google Fonts (minimalista) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #000000;
+  /* Fundo preto */
+  color: #FFFFFF;
+  /* Cor do texto padrão: branco */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  /* Título maior e mais chamativo */
+  color: #FFD700;
+  /* Cor do título: dourado */
+  text-align: center;
+  letter-spacing: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+section input {
+  width: 30rem;
+  border: 2px solid #FFD700;
+  /* Borda dourada */
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fafafa;
+  background-color: #000000;
+  /* Cor do texto do input: branco */
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  /* Efeito de transição na borda */
+}
+
+section input:hover {
+  border-color: #FFFFFF;
+  /* Borda branca ao passar o mouse */
+}
+
+section button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #FFD700;
+  /* Cor de fundo do botão: dourado */
+  color: #000000;
+  /* Cor do texto do botão: preto */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Efeito de transição no fundo */
+}
+
+section button:hover {
+  background-color: #000000;
+  /* Cor de fundo do botão ao passar o mouse: branco */
+  color: #FFD700;
+  /* Cor do texto do botão ao passar o mouse: dourado */
+}
+
+.resultados-pesquisa {
+  width: 60rem;
+  height: 46vh;
+  overflow-y: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+}
+
+.item-resultado {
+  background: #222831;
+  /* Cor de fundo dos itens: cinza escuro */
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* Sombra mais forte */
+  transition: background-color 0.3s ease;
+  /* Efeito de transição no fundo */
+}
+
+.item-resultado:hover {
+  background-color: #393E46;
+  /* Cor de fundo dos itens ao passar o mouse: cinza mais claro */
+}
+
+.item-resultado h2 {
+  font-size: 1.5rem;
+  color: #FFD700;
+  /* Cor do título dos resultados: dourado */
+}
+
+.item-resultado a {
+  text-decoration: none;
+  color: #FFD700;
+  /* Cor dos links: dourado */
+}
+
+.item-resultado a:hover {
+  text-decoration: underline;
+}
+
+.descricao-meta {
+  color: #fffafa;
+  /* Cor da descrição: branco */
+  margin: 0.5rem 0;
+}
+
+footer {
+  background-color: #222831;
+  /* Cor de fundo do rodapé: cinza escuro */
+  color: #FFFFFF;
+  /* Cor do texto do rodapé: branco */
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  position: static;
+  bottom: 0;
+  font-size: 1rem;
+}
